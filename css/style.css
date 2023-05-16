@@ -1,8 +1,12 @@
-/* .nav-link{
-    font-size: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    
-} */
+.nav-link{
+    color: white;
+}
+.skill{
+    color: white;
+    padding: 10px;
+}
+@media screen and (max-width: 768px) {
+    #head {
+        font-size: 14px important;
+    }
+}
