@@ -5,6 +5,16 @@
     color: white;
     padding: 10px;
 }
+
+#typewriter {
+  overflow: hidden; /* hide overflow text */
+  white-space: nowrap; /* prevent line breaks */
+  font-size: 24px;
+  font-family: monospace;
+  letter-spacing: .15em;
+  color: orange;
+}
+
 @media screen and (max-width: 768px) {
     #head {
         font-size: 14px important;

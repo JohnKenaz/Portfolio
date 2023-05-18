@@ -36,12 +36,12 @@
       </div>
     </nav>
     <!-- Home -->
-    <div class="col-lg-12 vh-100 d-flex flex-column justify-content-center align-items-center border-bottom border-white">
-      <h3 class="" style="color: rgba(0, 0, 0, 0.911); background-color:  rgb(255, 255, 255); border-top-left-radius:20px; border-bottom-right-radius:20px; padding: 10px;">Hi! I'm</h3>
+    <div class="col-lg-12 vh-100 d-flex flex-column justify-content-center align-items-center border-bottom border-white" style="margin-top: -60px;">
+      <h3 style="color: rgba(0, 0, 0, 0.911); background-color:  rgb(255, 255, 255); border-top-left-radius:20px; border-bottom-right-radius:20px; padding: 10px; margin-left: -320px;">Hi! I'm</h3>
       <h1 id="head" style="color: white; padding-bottom: 100px; font-size: 50px;"><span style="color: rgb(69, 223, 250);">JOHN KENAZ </span>PEÑA</h1>
-      <h2 id="typewriter" style="color: white;">Hello World!</h2>
+      <h2 id="typewriter" style="margin-top: -100px;"></h2>
     </div>
-    
+
     <!-- About ME -->
     <div class="row">
       <center>
@@ -151,18 +151,25 @@
   
   <!-- SCRIPT -->
   <script>
-    var i = 0;
-    var txt = 'Hello World!';
-    var speed = 50;
+      const text = "WELCOME TO MY PORTFOLIO";
+let index = 0;
 
-    function typeWriter() {
-      if (i < txt.length) {
-        document.getElementById("typewriter").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-      }
-    }
-      typeWriter();
+function typeWriter() {
+  if (index < text.length) {
+    document.getElementById("typewriter").innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeWriter, Math.floor(Math.random() * 100) + 50); // use variable delay of 50-250ms
+  }
+  else {
+    setTimeout(function() {
+      document.getElementById("typewriter").innerHTML = ""; // Clear the current text
+      index = 0; // Reset the index variable to 0 to repeat typing
+      typeWriter(); // Start typing again
+    }, 3000); // Wait for 3 second before starting again
+  }
+}
+
+typeWriter();
   </script>
 </body>
 </html>
