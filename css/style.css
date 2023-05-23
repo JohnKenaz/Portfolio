@@ -15,6 +15,28 @@
   color: orange;
 }
 
+@font-face{
+    font-family: 'myFont';
+    src: url(../fonts/digital-7.ttf);
+
+}
+#date{
+    font-family: myFont;
+    color: rgb(69, 223, 250);
+    font-size: 18px;
+    padding: 5px;
+    border: 2px solid;
+    border-color: white;
+}
+#time{
+    font-family: myFont;
+    color: orange;
+    font-size: 18px;
+    padding: 5px;
+    border: 2px solid;
+    border-color: white;
+}
+
 @media screen and (max-width: 768px) {
     #head {
         font-size: 14px important;
