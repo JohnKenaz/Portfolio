@@ -18,11 +18,14 @@
 @font-face{
     font-family: 'myFont';
     src: url(../fonts/digital-7.ttf);
+}
 
-}
-#datetime{
+.details{
     color: white;
+    font-size: 20px;
+    margin-top: 25px;
 }
+
 #date{
     font-family: myFont;
     color: rgb(69, 223, 250);
@@ -38,6 +41,11 @@
     padding: 5px;
     border: 2px solid;
     border-color: white;
+}
+#c-btn{
+    font-size: 13px;
+    border: 2px white solid;
+    margin-left: 12px;
 }
 #pic{
     border: 3px solid;
