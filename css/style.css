@@ -14,7 +14,6 @@
 #dt-btn{
   background-color: transparent;
   border: 1px solid white;
-  
   color:rgb(7, 235, 243);
   font-weight: 300;
 }
@@ -118,9 +117,14 @@
 }
 
 .form{
-    background-color: white;  
+    background-color: transparent;  
     backdrop-filter: blur(5px);
     padding: 50px;
-    border-radius: 30px;
-
+    border: 1px solid rgb(69, 223, 250);
+    color: rgb(69, 223, 250);
+}
+#send-button{
+ color: rgb(69, 223, 250);
+ background: transparent;
+ border: 1px solid rgb(69, 223, 250);
 }
