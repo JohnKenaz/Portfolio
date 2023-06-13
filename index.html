@@ -12,12 +12,21 @@
 </head>
 <body>
   <div class="container-fluid bg-dark">
-    <!-- Navbar -->
+
+    <!-- NAV BAR -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" style="font-size: 30px;"><span style="color: rgb(69, 223, 250);">Port</span>folio</a>
         <!-- DATE AND TIME -->
-        <div id="datetime" style="color: white;">DATE: <span id="date"></span> TIME: <span id="time"></span></div>
+        <div class="dropdown">
+          <button id="dt-btn" class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Date/Time
+          </button>
+          <ul class="dropdown-menu" style="background-color: #212529; border: transparent;">
+            <div id="datetime" style="color: white; font-weight: 300;">DATE: <span id="date"></span> TIME: <span id="time"></span></div>
+          </ul>
+        </div>
+        <!-- DATE AND TIME END -->
         <button id="c-btn" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,9 +34,6 @@
           <ul class="nav ms-auto d-flex justify-content-center">
             <li class="nav-item">
               <a class="nav-link active nav-btn" aria-current="page" href="#">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active nav-btn" aria-current="page" href="#">Skills</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active nav-btn" aria-current="page" href="#">Projects</a>
@@ -39,16 +45,17 @@
         </div>
       </div>
     </nav>
-    <!-- Home -->
+<!-- NAV BAR END --> 
+<!-- Home -->
     <div class="col-lg-12 vh-100 d-flex flex-column justify-content-center align-items-center border-bottom border-white" style="margin-top: -60px;">
       <h3 style="color: rgba(0, 0, 0, 0.911); background-color:  rgb(255, 255, 255); border-top-left-radius:20px; border-bottom-right-radius:20px; padding: 10px; margin-left: -320px;">Hi! I'm</h3>
-      <h1 id="head" style="color: white; padding-bottom: 100px; font-size: 50px;"><span style="color: rgb(69, 223, 250);">JOHN <span style="color: rgb(69, 223, 250);">KENAZ</span> </span>PEÑA</h1>
+      <h1 id="head" style="color: white; padding-bottom: 100px; font-size: 50px;"><span style="color: rgb(69, 223, 250);">JOHN KENAZ PEÑA</h1>
       <h2 id="typewriter" style="margin-top: -100px;"></h2>
     </div>
-
-    <!-- About ME -->
-      <div class="container-fluid" style="margin-bottom: 10%;">
-        <div class="row">
+<!-- Home END -->
+<!-- About ME -->
+      <div class="container-fluid border-bottom border-white" style="margin-bottom: 10%;">
+        <div class="row" style="margin-bottom: 20%;">
           <center>
             <h2 style="color: white; padding: 10px"><span style="color: rgb(69, 223, 250)">ABOUT </span>ME</h2>
           </center>
@@ -58,33 +65,67 @@
             </center>
           </div>    
           <div class="col-lg-8 mt-5">
-            <div style="margin-top: -50px;">
-                <p class="detail">Hello, my name is John Kenaz Peña, and I am a beginner <span style="color: orange;">WEB DEVELOPER</span>.</p>
-                <h3 style="color: orange;"> Welcome to my online portfolio! </h3>
-                <p class="detail2">I am a Student Web Developer with 4 years of experience in the school. My passion for Web Developing started when [Briefly explain what motivated you to pursue your profession].</p>
-                <p class="detail2">Throughout my career, I have had the opportunity to work on a wide range of projects, including [List some of your most notable projects or achievements]. These experiences have given me a deep understanding of [Your Profession], as well as the skills and knowledge needed to [What you specialize in].</p>
-                <p class="detail2">In my spare time, I enjoy [Hobbies or interests that show your personality or creativity]. I believe that these interests have helped me to approach my work with a unique perspective, and have contributed to my success as a [Your Profession].</p>
+            <div id=dbox>
+                <p class="detail"><span id="hello">Hello!</span> <span id="m-name">My name is <span style="color:rgb(69, 223, 250)">John Kenaz Peña</span>, and I am a beginner <span style="color: rgb(69, 223, 250)">WEB DEVELOPER</span>.</span></p>
+                <p class="detail2">My passion for Web Developing started when our Instructors taught and I instantly get hooked by the subject. Im still a beginner, but I am motivated to learn and explore the idustry of web development.  </p>
+            </div>
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="dropdown drop1">
+                  <button class="btn btn-secondary dropdown-toggle hs-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Computer Language Skills
+                  </button>
+                  <ul class="dropdown-menu drop-m">
+                      <p class="skill">HTML</p>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                      </div>
+                      <p class="mt-3 skill">CSS</p>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                      </div>
+                      <p class="mt-3 skill">BOOTSTRAP</p>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                      </div>
+                      <p class="mt-3 skill">JAVASCRIPT</p>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                      <p class="mt-3 skill">JAVA</p>
+                        <div class="progress">
+                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                        </div>
+                  </ul>
+                </div>  
+              </div>
+              <div class="col-lg-4">
+                <div class="drop1">
+                  <button type="button" class="btn hs-btn" style="border: 1px solid orange;">Download CV</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      
-      <!-- PROJECT SECTION -->
-    <div class="container-fluid" style="padding: 20px;">
+<!-- About ME END -->   
+<!-- PROJECT SECTION -->
+    <div class="container-fluid" style="padding: 20px; margin-top: -12%; margin-bottom: 15%;">
       <div class="row">
         <div class="col-lg-8 mt-3">
           <center><h3 style="padding: 10px; color: white;"><span style="color: rgb(69, 223, 250);">PRO</span>JECT</h3></center>
           <div class="container-fluid" style="padding: 30px;">
-                
           </div>
         </div>
-      
-      <!-- SKILLS SECTION -->
+<!-- PROJECT SECTION END -->
+<!-- SKILLS SECTION -->
       <div class="col-lg-4 mt-2 bg-dark-2">
         <h3 class="mt-3"><center style="color: white"><span style="color: rgb(69, 223, 250)">SKI</span>LLS</center></h3>       
-        <h5 class="mt-3 skill">HTML</h5>
-        <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+        <div class="justify-content-center prog-border">
+          <h5 class="mt-3 skill">HTML</h5>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+          </div>
         </div> 
         <h5 class="mt-3 skill">CSS</h5>
         <div class="progress">
@@ -105,7 +146,6 @@
       </div>
       </div>
     </div>
-
     <!-- CONTACT ME -->
     <div style="padding: 10px; border-top: 1px solid white;"><center><h2 style="color: rgb(69, 223, 250);">CONTACT <span style="color: white;">ME</span></h2></center></div>
       <div class="container-fluid">
@@ -123,7 +163,6 @@
               </div>
             </div>
           </div>
-  
           <div class="col-lg-6">
             <h1 style="color: green;">hlegh</h1>
           </div>
@@ -176,5 +215,11 @@ function updateDateTime() {
 // call the updateDateTime function every second using setInterval()
 setInterval(updateDateTime, 1000);
   </script>
+ 
+ <!-- MUSIC -->
+<script>
+  var audio = document.getElementById("background-music");
+  audio.play();
+</script>
 </body>
 </html>

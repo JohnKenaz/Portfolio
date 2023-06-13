@@ -1,13 +1,22 @@
 .nav-link{
     color: white;
+    font-weight: 300;
 }
 .skill{
-    color: white;
-    padding: 10px;
+    color: rgb(7, 235, 243);
+    padding: 1px;
+    font-weight: 300;
 }
 .nav-btn{
-  font-family: pfont;
   color: rgb(255, 255, 255);
+}
+
+#dt-btn{
+  background-color: transparent;
+  border: 1px solid white;
+  
+  color:rgb(7, 235, 243);
+  font-weight: 300;
 }
 
 #typewriter {
@@ -28,14 +37,40 @@
   src: url(../fonts/Typographica.ttf);
 }
 
+#hello{
+  font-size: 60px;
+  color: rgb(69, 223, 250);
+  font-weight: 400;
+}
+
 .detail{
     color: white;
     font-size: 20px;
     margin-top: 25px;
 }
+
 .detail2{
   color: white;
   font-size: 20px;
+  
+}
+
+#dbox{
+  margin-top: -50px;
+  font-weight: 300;
+}
+
+.hs-btn{
+  color:rgb(69, 223, 250);
+  font-weight: 300;
+  background-color: transparent;
+}
+.drop1{
+  padding: 30px;
+}
+.drop-m{
+  background-color:  #212529;
+  
 }
 
 #date{
@@ -43,16 +78,12 @@
     color: rgb(69, 223, 250);
     font-size: 18px;
     padding: 5px;
-    border: 2px solid;
-    border-color: white;
 }
 #time{
     font-family: myFont;
     color: orange;
     font-size: 18px;
     padding: 5px;
-    border: 2px solid;
-    border-color: white;
     width: 10px;
 }
 #c-btn{
@@ -67,6 +98,12 @@
     width: 300px;
     opacity: 90%;
     animation: border-move 2s infinite;;
+}
+.prog-border{
+  border: 1px solid;
+  border-color:  rgb(69, 223, 250);
+  padding: 10px;
+  
 }
 @keyframes border-move {
   0% {
