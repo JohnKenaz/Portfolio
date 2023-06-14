@@ -18,7 +18,7 @@
         <a class="navbar-brand" style="font-size: 30px;"><span style="color: rgb(69, 223, 250);">Port</span>folio</a>
         <!-- DATE AND TIME -->
         <div class="dropdown">
-          <button id="dt-btn" class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <button id="date-time-btn" class="btn btn-sm btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             Date/Time
           </button>
           <ul class="dropdown-menu" style="background-color: #212529; border: transparent;">
@@ -60,7 +60,7 @@
           </center>
           <div class="col-lg-4 bg-dark" id="home">
             <center class="mt-3">
-              <img src="img/pic 2.webp" id="pic" class="img-fluid" alt="my picture">
+              <img src="img/pic.jpg" id="pic" class="img-fluid" alt="my picture">
             </center>
           </div>    
           <div class="col-lg-8 mt-5">
@@ -70,37 +70,10 @@
             </div>
             <div class="row">
               <div class="col-lg-4">
-                <div class="dropdown drop1">
-                  <button class="btn btn-secondary dropdown-toggle hs-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Computer Language Skills
-                  </button>
-                  <ul class="dropdown-menu drop-m">
-                      <p class="skill">HTML</p>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                      </div>
-                      <p class="mt-3 skill">CSS</p>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                      </div>
-                      <p class="mt-3 skill">BOOTSTRAP</p>
-                      <div class="progress">
-                        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                      </div>
-                      <p class="mt-3 skill">JAVASCRIPT</p>
-                        <div class="progress">
-                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                        </div>
-                      <p class="mt-3 skill">JAVA</p>
-                        <div class="progress">
-                          <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                        </div>
-                  </ul>
-                </div>  
-              </div>
-              <div class="col-lg-4">
                 <div class="drop1">
-                  <button type="button" class="btn hs-btn" style="border: 1px solid orange;">Download CV</button>
+                  <button type="button" class="btn hs-btn" style="border: 1px solid orange;">
+                    <a href="cv/cv.pdf" download class="btn hs-btn">Download CV</a>
+                  </button>
                 </div>
               </div>
             </div>
@@ -108,32 +81,64 @@
         </div>
       </div>
 <!-- About ME END -->   
-<!-- PROJECT SECTION -->
     <div class="container-fluid" style="padding: 20px; margin-top: -12%; margin-bottom: 15%;">
       <div class="row">
-        <div class="col-lg-8 mt-3">
-          <center><h3 style="padding: 10px; color: white;"><span style="color: rgb(69, 223, 250);">PRO</span>JECT</h3></center>
+          <!-- CONTACT ME SECTION -->
+          <div class="col-lg-4 mt-2 bg-dark-2">
+            <center><h3 style="padding: 10px; color: white;"><span style="color: rgb(69, 223, 250);">CONTACT </span>ME</h3></center>
+                <div class="container-fluid form project-container">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control input-area" id="exampleFormControlInput1" placeholder="name@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control input-area" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <center><button type="button" class="btn" id="send-button">Send</button></center>
+                    </div>
+                    <div class="mb-3">
+                      
+                    </div>
+                </div>
+        </div>
+        <!-- CONTACT ME SECTION END  -->
+        <!-- PROJECT SECTION -->
+        <div class="col-lg-6 mt-3" style="margin-top: 1px;">
+          <center><h3 style="padding: 10px; color: white; margin-top: -7px;"><span style="color: rgb(69, 223, 250);">PRO</span>JECT</h3></center>
           <div class="container-fluid" style="padding: 30px;">
           </div>
         </div>
-<!-- PROJECT SECTION END -->
-<!-- SKILLS SECTION -->
-      <div class="col-lg-4 mt-2 bg-dark-2">
-        <center><h3 style="padding: 10px; color: white;"><span style="color: rgb(69, 223, 250);">CONTACT </span>ME</h3></center>
-        <div class="container-fluid form">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-          <div class="mb-3">
-            <center><button type="button" class="btn" id="send-button">Send</button></center>
-          </div>
+        <!-- PROJECT SECTION END -->
+        <!-- SKILLS SECTION -->
+        <div class="col-lg-2" style="margin-top: 9px;">  
+            <center><h3 style="padding: 10px; color: white; "><span style="color: rgb(69, 223, 250);">SKI</span>LLS</h3></center>    
+                <div class="container skill-container">
+                    <p class="skill">HTML</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                    <p class="mt-3 skill">CSS</p>
+                            <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                    <p class="mt-3 skill">BOOTSTRAP</p>
+                            <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                      <p class="mt-3 skill">JAVASCRIPT</p>
+                            <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                      <p class="mt-3 skill">JAVA</p>
+                            <div class="progress">
+                                  <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div> 
+                </div>    
         </div>
-      </div>
+        <!-- SKILLS SECTION END-->
+      <!-- CONTACT ME SECTION -->
       </div>
     </div>
     <!-- CONTACT ME -->

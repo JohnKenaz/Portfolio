@@ -11,10 +11,10 @@
   color: rgb(255, 255, 255);
 }
 
-#dt-btn{
+#date-time-btn{
   background-color: transparent;
-  border: 1px solid white;
-  color:rgb(7, 235, 243);
+  border: 1px solid rgb(69, 223, 250);
+  color:rgb(255, 255, 255);
   font-weight: 300;
 }
 
@@ -92,7 +92,7 @@
 }
 #pic{
     border: 3px solid;
-    border-radius: 100%; 
+    border-radius: 10%; 
     border-color:  rgb(69, 223, 250);
     width: 300px;
     opacity: 90%;
@@ -102,6 +102,7 @@
   border: 1px solid;
   border-color:  rgb(69, 223, 250);
   padding: 10px;
+  padding: 20px
   
 }
 @keyframes border-move {
@@ -123,8 +124,16 @@
     border: 1px solid rgb(69, 223, 250);
     color: rgb(69, 223, 250);
 }
+.input-area{
+  background-color: transparent;
+  border: 1px solid rgb(69, 223, 250);
+}
 #send-button{
  color: rgb(69, 223, 250);
  background: transparent;
  border: 1px solid rgb(69, 223, 250);
+}
+.skill-container{
+  border: 1px solid rgb(69, 223, 250);
+  padding: 10px;
 }
